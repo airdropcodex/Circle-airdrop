@@ -1,6 +1,8 @@
 # Circle Bot for Circle Airdrop
 
-This repository contains an automation script for watching ads as part of an airdrop project on Telegram called **Circle**. The script processes accounts stored in a file and automates the ad-watching process to earn rewards.
+This repository contains an automation script for watching ads as part of an airdrop project on Telegram called **Circle**. The script processes accounts stored in a file and automates the ad-watching process to earn rewards. 
+
+Donate if you are happy with it...😊
 
 ---
 
@@ -37,11 +39,11 @@ This repository contains an automation script for watching ads as part of an air
 1. Clone the repository:  
 
    ```bash
-   git clone https://github.com/YouTubeDLPro/Circle-bot.git
+   git clone https://github.com/airdropcodex/Circle-airdrop.git
    ```
    Change the directory to the repo folder:
    ```bash
-   cd Circle-bot
+   cd Circle-airdrop
    ```
    
 2. Install dependencies:
@@ -82,9 +84,9 @@ And there are place for giving 20 telegram accounts details.
 ## How to Use
 
 1. Run the script:
-
+```bash
 python circle.py
-
+```
 
 2. The script will:
 
@@ -97,8 +99,6 @@ Log progress and errors in app.log.
 
 
 3. Use CTRL+C to gracefully shut down the script.
-
-
 
 
 ---
