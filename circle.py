@@ -174,7 +174,7 @@ def claim_ad(account):
             tracking_urls = [t.get("value") for t in ad_data.get("banner", {}).get("trackings", [])]
 
             if not tracking_urls:
-                logger.error(f"No claim URLs found for account {account['tg_id']}.")
+                logger.warning(f"No claim URLs found for account {account['tg_id']}. Retrying... Hold on!")
                 return False
 
             for tracking_url in tracking_urls:
@@ -201,8 +201,6 @@ def watch_ads_for_account(account):
         if claim_ad(account):
             logger.info(f"{GREEN}✨ Success! Rewards claimed for {account['tg_id']}! +1000 Sparks added! 🎉{RESET}")
             break
-        else:
-            logger.warning(f"Retrying for {account['tg_id']}... Hold on!")
         time.sleep(5)
 
 
